@@ -24,17 +24,19 @@
             <div class="div7"> <img class=draggable src="images/image-7.png" alt=""></div>
             <div class="div8"> <img class=draggable src="images/image-8.png" alt=""></div>
             <div class="div9"> <img class=draggable src="images/image-9.png" alt=""></div>
+            <div class="div10 draggable">
+                <div class="square4"></div>
+            </div>
+
+
     </section>
 
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>     
     <script>var draggableElems = document.querySelectorAll('.draggable');
-        // array of Draggabillies
         var draggies = []
-        // init Draggabillies
         for ( var i=0; i < draggableElems.length; i++ ) {
           var draggableElem = draggableElems[i];
           var draggie = new Draggabilly( draggableElem, {
-            // options...
           });
           draggies.push( draggie );
         }

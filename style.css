@@ -19,6 +19,8 @@ body {
     grid-template-rows: repeat(3, 200px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    justify-content: center;
+    padding-top: 10%;
 }
 
 .div1 { 
@@ -40,10 +42,13 @@ body {
 .div9 { 
     grid-area: 3 / 3 / 4 / 4; }
 
+ .div10 { 
+    grid-area: 2 / 2 / 3 / 3; }
+
 .square{
     width: 250px;
     height: 250px;
-    background: #7BD3EA;
+    background: #4fdcff37;
     position: absolute;
     left: 15%;
     right: 28%;
@@ -58,6 +63,7 @@ body {
     left: 40%;
     right: 14%;
     top: 45%;
+    transform: rotate(40deg);
 }
 
 .square3 {
@@ -70,3 +76,22 @@ body {
     top: 23%;
 }
 
+
+.square4 {
+    width: 200px;
+    height: 200px;
+    background: #cbff0f42;
+    position: relative;
+}
+
+.square:hover {
+    background-color: #ff5733; /* Une nouvelle couleur */
+}
+
+.square2:hover {
+    background-color: #8e44ad; /* Une autre couleur */
+}
+
+.square3:hover {
+    background-color: #2ecc71; /* Une autre couleur */
+}
