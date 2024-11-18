@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Drag n' Drop Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <section id="s1">
+        <div class="square draggable"></div>
+        <div class="square2 draggable"></div>
+        <div class="square3 draggable"></div>
+
+    </section>
+
+    <section id="s2">
+            <div class="div1"> <img class=draggable src="images/image-2.png" alt=""></div>
+            <div class="div2"> <img class=draggable src="images/image-1.png" alt=""></div>
+            <div class="div3"> <img class=draggable src="images/image-3.png" alt=""></div>
+            <div class="div4"> <img class=draggable src="images/image-4.png" alt=""> </div>
+            <div class="div5"> <img class=draggable src="images/image-5.png" alt=""></div>
+            <div class="div6"> <img class=draggable src="images/image-6.png" alt=""></div>
+            <div class="div7"> <img class=draggable src="images/image-7.png" alt=""></div>
+            <div class="div8"> <img class=draggable src="images/image-8.png" alt=""></div>
+            <div class="div9"> <img class=draggable src="images/image-9.png" alt=""></div>
+    </section>
+
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>     
+    <script>var draggableElems = document.querySelectorAll('.draggable');
+        // array of Draggabillies
+        var draggies = []
+        // init Draggabillies
+        for ( var i=0; i < draggableElems.length; i++ ) {
+          var draggableElem = draggableElems[i];
+          var draggie = new Draggabilly( draggableElem, {
+            // options...
+          });
+          draggies.push( draggie );
+        }
+    </script>
+   
+
 </body>
 </html>
